@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daybook — Task Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="ledger-header">
+      <div class="header-left">
+        <p class="eyebrow">Today's ledger</p>
+        <h1>Daybook</h1>
+      </div>
+      <div class="date-stub" id="todayDate"></div>
+    </header>
+
+    <section class="stats-row" id="statsRow">
+      <div class="stub">
+        <span class="stub-count" id="statTotal">0</span>
+        <span class="stub-label">Total</span>
+      </div>
+      <div class="stub">
+        <span class="stub-count" id="statOpen">0</span>
+        <span class="stub-label">Open</span>
+      </div>
+      <div class="stub">
+        <span class="stub-count" id="statDone">0</span>
+        <span class="stub-label">Done</span>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+    <form class="add-form" id="addForm" autocomplete="off">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Write today's next task…"
+        maxlength="120"
+        required
+      />
+      <select id="priorityInput" aria-label="Priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button type="submit" class="add-btn">Add task</button>
+    </form>
+
+    <nav class="filter-tabs" id="filterTabs">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="open">Open</button>
+      <button class="tab" data-filter="done">Done</button>
+    </nav>
+
+    <ul class="task-list" id="taskList"></ul>
+
+    <p class="empty-state" id="emptyState">
+      Nothing on the ledger yet. Add your first task above.
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
