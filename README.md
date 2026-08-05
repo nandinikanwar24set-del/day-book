@@ -2,8 +2,8 @@
 
 A clean, ledger-styled task manager built with vanilla **HTML, CSS, and JavaScript**. No frameworks, no build tools — just open it in a browser.
 
-🔗 **Live Demo:** [add your hosted link here]
-📂 **Repository:** [add your GitHub repo link here]
+🔗 **Live Demo:** [nandinikanwar24set-del.github.io/day-book](https://nandinikanwar24set-del.github.io/day-book/)
+📂 **Repository:** [github.com/nandinikanwar24set-del/day-book](https://github.com/nandinikanwar24set-del/day-book)
 
 ![Daybook screenshot](screenshot.png)
 
@@ -39,8 +39,8 @@ task-manager/
 ### Run locally
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/task-manager.git
-   cd task-manager
+   git clone https://github.com/nandinikanwar24set-del/day-book.git
+   cd day-book
    ```
 2. Open `index.html` in your browser — that's it, no install step needed.
 
