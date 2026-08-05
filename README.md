@@ -5,8 +5,6 @@ A clean, ledger-styled task manager built with vanilla **HTML, CSS, and JavaScri
 🔗 **Live Demo:** [nandinikanwar24set-del.github.io/day-book](https://nandinikanwar24set-del.github.io/day-book/)
 📂 **Repository:** [github.com/nandinikanwar24set-del/day-book](https://github.com/nandinikanwar24set-del/day-book)
 
-![Daybook screenshot](daybook.png)
-
 ## ✨ Features
 
 - **Add tasks** with a title and priority level (Low / Medium / High)
